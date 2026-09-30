@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lab 2: Events in Motion</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
+        <main>
+            <h1>Interactive Mood Board</h1>
+            <p>Express your mood by using the buttons on your keyboard!</p>
 
-        <div id="box">
-            <p id="title">Events in Motion ^..^</p>
-        </div>
+            <section id="moodBox">
+                <h2 id="moodTitle">Choose a mood</h2>
+                <p id="moodText">Click a mood below to change the appearance of the message.</p>
+                <p id="counter">Interactions: 0</p>
+            </section>
 
-        <button onclick="alert('Stay Pawsitive ^..^')">Click Me for a Surprise!</button>
 
+            <section>
+                <button id="happyButton">Happy</button>
+                <button id="sadButton">Sad</button>
+                <button id="angryButton">Angry</button>
+            </section>
+
+            <section>
+                <h2>Try the keyboard</h2>
+                <p> Press H, S, or A to change the mood.</p>
+                <P id="keyMessage">No key pressed yet.</P>
+            </section>
+
+            <section>
+                <h2>Browser Information</h2>
+                <p id="windowInfo">Resize the browser window to see the size change.</p>
+                <button id="windowButton">Show Window Info</button>
+            </section>
+        </main>
         <script src="script.js"></script>
-
     </body>
 </html>
